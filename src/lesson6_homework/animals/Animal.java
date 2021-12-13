@@ -14,13 +14,22 @@ public class Animal {
         count++;
     }
 
+    public Animal(String name, String color, int age, int maxRunDistance, int maxSwimDistance) {
+        this.name = name;
+        this.color = color;
+        this.age = age;
+        this.maxRunDistance = maxRunDistance;
+        this.maxSwimDistance = maxSwimDistance;
+        count++;
+    }
+
     public void showAnimalCount() {
         System.out.println("Количество созданных животных - " + count);
     }
 
     public void run(int distance) {
         if (distance > 0 && distance <= maxRunDistance) {
-            System.out.println("Животное по имени " + name + "пробежало " + distance + " метров.");
+            System.out.println("Животное по имени " + name + " пробежало " + distance + " метров.");
         } else {
             System.out.println("Неверное значение. Максимальная дистанция - " + maxRunDistance);
         }
@@ -28,7 +37,7 @@ public class Animal {
 
     public void swim(int distance) {
         if (distance > 0 && distance <= maxSwimDistance) {
-            System.out.println("Животное по имени " + name + "проплыло " + distance + " метров.");
+            System.out.println("Животное по имени " + name + " проплыло " + distance + " метров.");
         } else {
             System.out.println("Неверное значение. Максимальная дистанция - " + maxSwimDistance);
         }

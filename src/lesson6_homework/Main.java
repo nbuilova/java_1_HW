@@ -20,6 +20,10 @@ public class Main {
         dogTuzik.swim(20);
         dogMarta.run(150);
 
+        Animal cowLara = new Animal("Lara","white-black",3,20,10);
+        cowLara.run(30);
+        cowLara.swim(10);
+
         catBarsik.showAnimalCount();
         catMursik.showCatCount();
         dogRalph.showDogCount();
